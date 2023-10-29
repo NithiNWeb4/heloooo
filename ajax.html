@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bb">
+ <div id="div"></div>
+ <button onclick="show()">hide</button>
+    <script>
+var i=document.createElement("h1");
+i.innerText="HELOOOOOO";
+i.id="h1";
+var d=document.getElementById("bb");
+d.appendChild(i);
+function show(){
+   var  x=document.getElementById("h1").style.visibility="hidden";
+}
+// ajax element
+
+           /*
+function get(){
+ 
+var xx=new XMLHttpRequest();
+xx.open("GET","onclick.js",true);
+xx.setRequestHeader("Content-Type","application/json");
+xx.onreadystatechange=function(){
+    if(this.readyState==4 &&  this.status==200){
+        var obj=xx.responseText;
+        document.getElementById("demo").innerHTML="Name:"+obj.name;
+
+    }
+}
+xx.send();
+
+}
+
+}
+*/
+    </script>
+</body>
+</html>
